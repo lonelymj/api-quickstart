@@ -33,7 +33,7 @@ public class Swagger {
                 .apiInfo(apiInfo())
                 .select()
                 //为当前包路径
-                .apis(RequestHandlerSelectors.basePackage("it.pkg.controller"))
+                .apis(RequestHandlerSelectors.basePackage("archetype.it.admin.api.controller"))
                 .paths(PathSelectors.regex("^(?!auth).*$"))
                 .paths(PathSelectors.any())
                 .build()

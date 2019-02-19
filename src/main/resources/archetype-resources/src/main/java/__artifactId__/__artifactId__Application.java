@@ -13,8 +13,10 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @NacosPropertySource(dataId = "${artifactId}", autoRefreshed = true)
 @EnableSwagger2
 @EnableGlobalMethodSecurity(prePostEnabled = true)
-public class Application {
+public class ${artifactId}Application {
+
     public static void main(String[] args) {
-            SpringApplication.run(Application.class);
+        SpringApplication.run(${artifactId}Application.class, args);
     }
+
 }
